@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  font-family: 'Signika', sans-serif;
+  background-color: rgb(201, 255, 201); /* Green color */
+  padding: 10px;
+  margin-top: 0;
+  height: 100vh;
+	background-size: cover;
+	text-align: center;
+	justify-content: center;
+}
+
+#mission_description {
+	text-align: center;
+	font-size: 2em;
+	width: 50%;
+}
+
+.title {
+	font-size: 1.5em;
+	
+}
+
+p {
+	font-size: 1.2em;
+}
+.mission_div{
+	display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+h1 {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+#navigationbar { 
+	margin: auto;
+	background-color: rgb(236, 220, 255);
+	color: green;
+	height: 3em;
+	font-family: 'Caprasimo', cursive;
+	text-align: center;
+}
+
+.introduction {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: auto;
+	align-items: center;
+}
+
+.introduction div {
+	text-align: center;
+}
+
+.content {
+	background-color: rgb(233, 244, 227);
+}
+
+ul {
+	margin: auto;
+}
+
+li{
+	display: inline;
+	margin: 8%;
+	font-size: 1em;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	display: block;
+}
+
+img {
+	height: 25em;
+	max-height: 800px;
+	margin: 5em;
+	display: inline-block;
+}
+
+.explanation {
+	height: 25em;
+	max-height: 800px;
+	margin: 5em;
+	display: inline-block;
+}
+
+#navigationbar p{
+	font-size: 20px;
+}
+
+
+/*
+form forum.css
+*/
+.container {
+	height: 100vh;
+	box-sizing: border-box;
+	margin: 20px;
+	padding: 20px;
+}
+
+html {
+	font-size: 14px;
+	font-family:'Times New Roman', Times, serif;
+	color: black;
+}
+
+.container a {
+	color: rgb(255, 78, 78);
+	font-weight: bolder;
+	/*no underlining*/
+	text-decoration: none;
+}
+
+.subforum {
+	margin-top: 20px;
+}
+
+.subforum-title {
+	background-color: rgb(179, 218, 230);
+	padding: 5px;
+	border-radius: 5px;
+	margin: 4px;
+}
+
+.subforum-row {
+	display: grid;
+	grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column {
+	padding: 10px;
+	margin: 4px;
+	border-radius: 5px;
+	background-color: rgb(227, 239, 238);
+}
+
+.subforum-description *{
+	margin-block: 0;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.subforum-icon i{
+	font-size: 45px;
+}
+
+
+/* space out the different posts a bit more with a divider */
+.subforum-divider {
+	display: block;
+	border: 0;
+	height: 1px;
+}
+/* can later come back and add info to adapt to tablets, phones, etc but not rn*/
+.search-box {
+	border: solid 1px purple;
+	margin-top: 20px;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 1px 2px 3px purple;
+}
+
+.search-box select{
+	padding: 10px;
+}
+
+.search-box input{
+	padding: 10px;
+}
+
+.search-box button{
+	padding: 10px;
+	background-color: white;
+	color: black;
+}
+
+.search-box button:hover{
+	padding: 10px;
+	background-color: white;
+	box-shadow: 1px 2px 3px grey;
+}
+
+.forum-info {
+	padding: 20px;
+	background-color: white;
+}
+
+.chart {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*
+from posts.html
+*/
+.table-head {
+	display: flex;
+}
+
+.table-head div{
+	padding: 5px;
+	margin: 2px;
+	background-color: lightblue;
+	font-weight: bold;
+}
+
+.table-head .status {
+	flex: 5%;
+}
+
+.table-head .subjects {
+	flex: 5%;
+}
+
+.table-head .replies {
+	flex: 5%;
+}
+
+.table-head .last-reply {
+	flex: 5%;
+}
+
+.table-row {
+	display: flex;
+}
+
+.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply {
+	padding: 5px;
+	margin: 2px;
+	background-color: lightpink;
+}
+
+.table-row .status {
+	flex: 5%;
+	font-size: 30px;
+	text-align: center;
+}
+
+.table-row .subjects {
+	flex: 70%;
+}
+
+.table-row .replies {
+	flex: 10%;
+}
+
+.table-row .last-reply {
+	flex: 15%;
+}
+
+.pagination {
+	padding: 20px;
+	font-size: 15x;
+}
+
+.pagination a{
+	color: grey;
+	margin-inline: 5px;
+	border: solid, 0.5px, grey;
+}
+
+.pagination a:hover {
+	opacity: 0.5;
+}
+
+.navigate {
+	margin-block: 20px;
+	font-weight: lighter;
+	font-size: 24px;
+}
+
+.navigate a{
+	color: grey;
+}
+
+.navigate a:hover{
+	color: red;
+	font-weight: bolder;
+}
+
+.note {
+	background-color: rgb(0, 15, 146);
+	padding: 20px;
+	display: block;
+}
+
+.note span {
+	font-size: 20px;
+	margin-block: 5px;
+}
+
+.head {
+	display: flex;
+	background-color: grey;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.authors{
+	flex: 20%;
+}
+
+.content {
+	flex: 80%;
+}
+
+body .authors .username{
+	font-size: 20px;
+}
+
+body .authors img{
+	max-width: 50px;
+	max-height: 80px;
+}
+
+body .content .comment button{
+	border: none;
+	padding: 10px;
+	font-weight: bolder;
+	box-shadow: 4px 6px black;
+	cursor: pointer;
+	float: right;
+}
+
+.comment-area {
+	margin-top: 50px;
+}
+
+.comment-area textarea {
+	width: 100%;
+	min-height: 100px;
+	padding: 10px;
+	margin-block: 10px;
+}
+
+.comment-area input{
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	float: right;
+}
+
+.comment-area input:hover{
+	border: solid 1px white;
+}
+
+.hide {
+	display: none
+}
+
+.body{
+	display: flex;
+	background-color: #c1def6;
+	padding: 10px;
+	margin-top: 5px;
+}

@@ -1,0 +1,87 @@
+{% extends 'base.html' %} {% block content %} {% load hitcount_tags%}
+<div class="container">
+  <div class="navigate">
+    <span
+      ><a href="3">My forum - forums</a> >>
+      <a href="{{post.get_url}}">{{post.title}}</a> >>
+      <a href="#">Random Post</a></span
+    >
+  </div>
+  <div class="comments-container">
+    <div class="head">
+      <div class="authors">Author:</div>
+      <div class="content">
+        Topic: {{post.title}}(read {% get_hit_count for post%} time(s))
+      </div>
+    </div>
+    <div class="body">
+      <div class="authors">
+        <div class="username">
+          <a href="#">{{post.user.fullname|title}}</a>
+        </div>
+        <div>Role</div>
+        <!--<img src="{{post.user.profile_pic.url}}" alt="" />-->
+        <i class="fa fa-user"></i>
+        <div>Posts: <u>45</u></div>
+        <div>Points: <u>5432</u></div>
+      </div>
+      <div class="content">
+        {{post.content|safe}}
+        <br />
+        <div class="comment">
+          <button onclick="toggleComment()">comment</button>
+        </div>
+      </div>
+    </div>
+    <div class="comment-area hide" id="comment-area">
+      <textarea names="comment" id="" placeholder="comment here..."></textarea>
+      <input type="submit" name="" id="" value="submit" />
+    </div>
+  </div>
+  <div class="comments-container">
+    <div class="head">
+      <div class="authors">Author:</div>
+      <div class="content">Topic: post's title(read 0 time(s))</div>
+    </div>
+    <div class="body">
+      <div class="authors">
+        <div class="AnotherUser">
+          <a href="#">Someone else</a>
+        </div>
+        <div>Role</div>
+        <i class="fa fa-user"></i>
+        <div>Posts: <u>45</u></div>
+        <div>Points: <u>5432</u></div>
+      </div>
+      <div class="content">
+        Just a comment of the above post.
+        <div class="comment">
+          <button onclick="toggleReply()">reply</button>
+        </div>
+      </div>
+    </div>
+    <div class="comment-area hide" id="reply-area">
+      <textarea names="comment" id="" placeholder="comment here..."></textarea>
+      <input type="submit" name="" id="" value="submit" />
+    </div>
+  </div>
+  <script>
+    function toggleComment() {
+      const commentArea = document.getElementById("comment-area");
+      if (commentArea.getAttribute("class").includes("hide")) {
+        commentArea.classList.remove("hide");
+      } else {
+        commentArea.classList += " hide";
+      }
+    }
+    function toggleReply() {
+      const commentArea = document.getElementById("reply-area");
+      if (commentArea.getAttribute("class").includes("hide")) {
+        commentArea.classList.remove("hide");
+      } else {
+        commentArea.classList += " hide";
+      }
+    }
+  </script>
+  {% endblock content %}
+</div>

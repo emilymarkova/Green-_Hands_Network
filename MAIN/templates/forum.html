@@ -1,0 +1,97 @@
+{% extends 'base.html' %} {% block content %}
+<div class="search-box">
+  <div>
+    <select name="" id="">
+      <option value="everything">Everything</option>
+      <option value="titles">Everythtitlesing</option>
+      <option value="description">description</option>
+    </select>
+    <input type="text" name="q" id="" placeholder="search..." />
+    <button><i class="fa fa-search"></i></button>
+  </div>
+</div>
+<div class="container">
+  <div class="subforum">
+    <!-- title of page-->
+    <div class="subforum-title">
+      <h1>General info</h1>
+    </div>
+    <div class="subforum-row">
+      <div class="subforum-icon subforum-column">
+        <i class="fa fa-book"></i>
+        <!--add image of icon here-->
+      </div>
+      <div class="subforum-description subforum-column">
+        <h4><a href="#">Description title:</a></h4>
+        <p>description content</p>
+      </div>
+      <div class="subforum-stats subforum-column">
+        <span>24 posts | 15 topics</span>
+      </div>
+      <div class="subforum-info subforum-column">
+        <b><a href="">Last post </a></b> by <a href="">JustAUser</a>
+        <br />
+        on <small>22 Dec 2021</small>
+      </div>
+    </div>
+
+    <hr class="subforum-divider" />
+
+    <div class="subforum-row">
+      <div class="subforum-icon subforum-column">
+        <i class="fa fa-book"></i>
+        <!--add image of icon here-->
+      </div>
+      <div class="subforum-description subforum-column">
+        <h4><a href="#">Description title:</a></h4>
+        <p>description content</p>
+      </div>
+      <div class="subforum-stats subforum-column">
+        <span>24 posts | 15 topics</span>
+      </div>
+      <div class="subforum-info subforum-column">
+        <b><a href="">Last post </a></b> by <a href="">JustAUser</a>
+        <br />
+        on <small>22 Dec 2021</small>
+      </div>
+    </div>
+
+    <hr class="subforum-divider" />
+
+    <div class="subforum-row">
+      <div class="subforum-icon subforum-column">
+        <i class="fa fa-book"></i>
+        <!--add image of icon here-->
+      </div>
+      <div class="subforum-description subforum-column">
+        <h4><a href="#">Description title:</a></h4>
+        <p>description content</p>
+      </div>
+      <div class="subforum-stats subforum-column">
+        <span>24 posts | 15 topics</span>
+      </div>
+      <div class="subforum-info subforum-column">
+        <b><a href="">Last post </a></b> by <a href="">JustAUser</a>
+        <br />
+        on <small>22 Dec 2021</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- form info-->
+<div class="forum-info">
+  <div class="chart">
+    My forum - stats &nbsp;<i class="fa fa-bar-chart"></i>
+  </div>
+  <div>
+    <span
+      ><u>5,369</u> posts in <u>1,210</u> topics by <u>45,214</u> users</span
+    >
+    <span>
+      latest post: <b><a href="#">random post</a></b> on 15 Dec 2021 by
+      <a href="#">User1223</a></span
+    >
+  </div>
+</div>
+{% endblock content %}
